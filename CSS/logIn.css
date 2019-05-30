@@ -3,10 +3,30 @@ body
 	background-color: #D6D4A0;
 }
 
+h1
+{
+	font-size: 50;
+	position: fixed;
+	top: 200;
+	left: 36%;
+	color: #DB995A;
+}
+
+#cred
+{
+	position: relative;
+	top: 20;
+}
+
 #logFrame
 {
 	float: left;
-	border-style: dotted;
+	border-style: dashed;
+	position: fixed;
+	bottom: 50%;
+	left: 40%;
+	padding: 10;
+	padding-bottom: 50;
 }
 
 #button
@@ -14,9 +34,9 @@ body
 	float: left;
 	border-style: outset;
 	border-color: black;
-	position: fixed;
-	bottom: 550;
-	left: 250;
+	position: relative;
+	top: 35;
+	left: 38%;
 	background-color: #DB995A;
 	padding: 3;
 	user-select: none;
