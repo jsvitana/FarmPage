@@ -1,0 +1,46 @@
+body
+{
+	background-color: #D6D4A0;
+}
+
+#logFrame
+{
+	float: left;
+	border-style: dotted;
+}
+
+#button
+{
+	float: left;
+	border-style: outset;
+	border-color: black;
+	position: fixed;
+	bottom: 550;
+	left: 250;
+	background-color: #DB995A;
+	padding: 3;
+	user-select: none;
+	
+}
+
+#button:hover
+{
+	background-color: #D6D4A0;
+	cursor: pointer;
+}
+
+#button:active
+{
+	background-color: #DB995A;
+}
+
+a:link
+{
+	color:black;
+}
+
+a:visited
+{
+	color: black;
+}
+
