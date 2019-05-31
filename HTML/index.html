@@ -4,13 +4,23 @@
 	<link rel="stylesheet" href="./../CSS/logIn.css" />
 </head>
 <body>	
-	<h1>Farm Database</h1>
 	<div id="logFrame">Please type in your login credentials
+	<h1>Farm Database</h1>
 	<div id="cred">Username:<br><br>Password:</div>
+	<input id="user"></input>
+	<input id="pass"></input>
 	
-	<a href="./MainPage.html"><div id="button" type="button">Log In</div></a>
+	<a href="./MainPage.html"><div id="button" type="button" onclick="loggedIn()">Log In</div></a>
 	
 	</div>
+	
+	<script>
+		function loggedIn()
+		{
+			var userName = document.getElementById("user").value;
+			localStorage.setItem("userName", userName);
+		}
+	</script>
 </body>
 
 

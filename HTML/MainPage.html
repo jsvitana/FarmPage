@@ -4,6 +4,14 @@
 	<link rel="stylesheet" href="./../CSS/MainPage.css" />
 </head>
 <body>
+	
+	<h2 id="welcome"></h2>
+	
+	<script>
+		var userName = localStorage.getItem("userName")
+		document.getElementById("welcome").innerHTML = "<u>Welcome " + userName + "</u>";
+	</script>
+	
 	<h1>Farm Database</h1>
 	<a href="./index.html"><div>Log Out</div></a>
 	<table>

@@ -6,9 +6,10 @@ body
 h1
 {
 	font-size: 50;
-	position: fixed;
-	top: 200;
-	left: 36%;
+	position: absolute;
+	top: -125;
+	right: -50; 
+	left: -40;
 	color: #DB995A;
 }
 
@@ -62,5 +63,22 @@ a:link
 a:visited
 {
 	color: black;
+}
+
+#user
+{
+	position: absolute;
+	bottom: 93;
+	left: 90;
+	width: 150;
+	height: 20;
+}
+
+#pass
+{
+	position: absolute;
+	left: 90;
+	width: 150;
+	height: 20;
 }
 
