@@ -1,0 +1,61 @@
+body
+{
+	background-color: #D6D4A0;
+}
+
+h1
+{
+	font-size: 50;
+	color: #DB995A;
+	text-align: center;
+	position: relative;
+}
+
+div
+{
+	color: #654236;
+	background-color: #DB995A;
+	position: fixed;
+	right: 15;
+	top: 15;
+	font-size: 15;
+	border-style: outset;
+	padding: 10;
+	padding-top: 5;
+	padding-bottom: 5;
+	user-select: none;
+}
+
+div:hover
+{
+	background-color: #D6D4A0;
+	cursor: pointer;
+}
+
+div:active
+{
+	background-color: #DB995A;
+}
+
+td
+{
+	color: #654236;
+	background-color: #DB995A;
+	font-size: 25;
+	border-style: outset;
+	padding: 10;
+	padding-top: 5;
+	padding-bottom: 5;
+	user-select: none;
+}
+
+td:hover
+{
+	background-color: #D6D4A0;
+	cursor: pointer;
+}
+
+td:active
+{
+	background-color: #DB995A;
+}
