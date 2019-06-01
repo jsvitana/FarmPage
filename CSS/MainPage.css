@@ -9,6 +9,7 @@ h1
 	color: #DB995A;
 	text-align: center;
 	position: relative;
+	bottom: 10;
 }
 
 h2
@@ -24,8 +25,8 @@ div
 	color: #654236;
 	background-color: #DB995A;
 	position: absolute;
-	right: 15;
-	top: 15;
+	left: 15;
+	top: 50;
 	font-size: 15;
 	border-style: outset;
 	padding: 10;
@@ -45,6 +46,12 @@ div:active
 	background-color: #DB995A;
 }
 
+table
+{
+	width: 100%;
+	border-spacing: 5;
+}
+
 td
 {
 	color: #654236;
@@ -55,6 +62,25 @@ td
 	padding-top: 5;
 	padding-bottom: 5;
 	user-select: none;
+	width: 100;
+	text-align: center;
+}
+
+a
+{
+	display: block;
+}
+
+a:link
+{
+	color: #654236;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #654236;
+	text-decoration: none;
 }
 
 td:hover

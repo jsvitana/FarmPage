@@ -17,13 +17,20 @@
 	
 	<table>
 	<tr>
-		<td>Summary</td>
-		<td>Hay</td>
-		<td>About</td>
+		<td><a target="main" href="./index.html">Summary</a></td>
+		<td><a target="main" href="./index.html">Finances</a></td>
+		<td><a target="main" href="./index.html">Hay</a></td>
+		<td><a target="main" href="./index.html">Cattle</a></td>
+		<td><a target="main" href="./index.html">Equipment</a></td>
+		<td><a target="main" href="./index.html">About</a></td>
 	</tr>
 	</table>
 	
-	<iframe />
+	<iframe name="main" />
 	
+	<script>
+		function change()
+		document.getElementById("main").src = "./index.html";
+	</script>
 </body>
 </html>
