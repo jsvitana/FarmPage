@@ -19,8 +19,7 @@ h2
 	position: relative;
 	top: 5;
 }
-
-div
+#log
 {
 	color: #654236;
 	background-color: #DB995A;
@@ -35,13 +34,13 @@ div
 	user-select: none;
 }
 
-div:hover
+#log:hover
 {
 	background-color: #D6D4A0;
 	cursor: pointer;
 }
 
-div:active
+#log:active
 {
 	background-color: #DB995A;
 }
@@ -50,20 +49,6 @@ table
 {
 	width: 100%;
 	border-spacing: 5;
-}
-
-td
-{
-	color: #654236;
-	background-color: #DB995A;
-	font-size: 25;
-	border-style: outset;
-	padding: 10;
-	padding-top: 5;
-	padding-bottom: 5;
-	user-select: none;
-	width: 100;
-	text-align: center;
 }
 
 a
@@ -83,13 +68,27 @@ a:visited
 	text-decoration: none;
 }
 
-td:hover
+.nav
+{
+	color: #654236;
+	background-color: #DB995A;
+	font-size: 25;
+	border-style: outset;
+	padding: 10;
+	padding-top: 5;
+	padding-bottom: 5;
+	user-select: none;
+	width: 80%%;
+	text-align: center;
+}
+
+.nav:hover
 {
 	background-color: #D6D4A0;
 	cursor: pointer;
 }
 
-td:active
+.nav:active
 {
 	background-color: #DB995A;
 }
@@ -97,7 +96,7 @@ td:active
 iframe
 {
 	width: 100%;
-	height: 100%;
+	height: 75%;
 }
 
 
