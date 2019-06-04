@@ -3,14 +3,21 @@ body
 	background-color: #D6D4A0;
 }
 
-h1
+#titleHead
 {
 	font-size: 50;
 	color: #DB995A;
 	text-align: center;
 	position: relative;
 	bottom: 10;
+	
 }
+
+#titleHead:hover
+{
+	color: #654236;
+}
+
 
 h2
 {
