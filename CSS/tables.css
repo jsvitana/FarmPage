@@ -1,0 +1,32 @@
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+tr
+{
+    height: 50;
+}
+tr:nth-child(odd)
+{
+    background-color: #DB995A;
+}
+tr:nth-child(odd):hover
+{
+    background-color: #F5A65B;
+}
+tr:nth-child(even):hover
+{
+    background-color: #C1CC99;
+}
+th
+{
+    height: 50;
+    font-size: 25;
+    color: #654236;
+}
+td
+{
+    text-align: center;
+    width: 33%;
+}
