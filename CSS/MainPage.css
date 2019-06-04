@@ -10,12 +10,13 @@ body
 	text-align: center;
 	position: relative;
 	bottom: 10;
-	
+	user-select: none;
 }
 
 #titleHead:hover
 {
 	color: #654236;
+	cursor: pointer;
 }
 
 

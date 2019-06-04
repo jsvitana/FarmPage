@@ -13,7 +13,13 @@
 		document.getElementById("welcome").innerHTML = "<u>Welcome " + userName + "</u>";
 	</script>
 	
-	<h1 id="titleHead">Farm Database</h1>
+	<h1 id="titleHead" onclick="getMessage()">Farm Database</h1>
+	<script>
+		function getMessage()
+		{
+			alert("Here you can see many aspects of your farm");
+		}
+	</script>
 
 	<a href="./index.html"><div id="log">Log Out</div></a>
 	
@@ -32,7 +38,10 @@
 	
 	<script>
 		function change()
-		document.getElementById("main").src = "./index.html";
+		{
+			document.getElementById("main").src = "./index.html";
+		}
 	</script>
+	
 </body>
 </html>
