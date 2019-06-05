@@ -2,7 +2,6 @@
 <head>
 	<title>Database</title>
 	<link rel="stylesheet" href="./../CSS/MainPage.css" />
-	<link rel="JavaScript" href="./../JavaScript/scipt.js" />
 </head>
 <body style="overflow:hidden;">
 	
@@ -13,13 +12,16 @@
 		document.getElementById("welcome").innerHTML = "<u>Welcome " + userName + "</u>";
 	</script>
 	
-	<h1 id="titleHead" onclick="getMessage()">Farm Database</h1>
-	<script>
+	<br>
+		<div id="titleHead" onclick="getMessage()"><b>Farm Database</b></div>
+	<br>
+	<script>	
 		function getMessage()
 		{
 			alert("Here you can see many aspects of your farm");
 		}
 	</script>
+	
 
 	<a href="./index.html"><div id="log">Log Out</div></a>
 	
@@ -34,7 +36,7 @@
 	</tr>
 	</table>
 	
-	<iframe name="main" src="./NavAreas/Summary.html" />
+	<iframe name="main" src="./NavAreas/Finances.html" />
 	
 	<script>
 		function change()
