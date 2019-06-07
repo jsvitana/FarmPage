@@ -23,7 +23,7 @@ tr:nth-child(even):hover
 th
 {
     height: 50;
-    font-size: 25;
+    font-size: 2em;
     color: #654236;
 }
 td
@@ -32,29 +32,12 @@ td
     width: 33%;
 }
 
-.subt
+img
 {
-    margin-left: 61;
-}
-
-.subtd
-{
-    color: #654236;
-    background-color: #DB995A;
-    text-align: center;
-    position: relative;
-    right: 40%;
-    border-radius: 30px;
-    user-select: none;
-}
-
-.subtd:hover
-{
-	background-color: #D6D4A0;
-	cursor: pointer;
-}
-
-.subtd:active
-{
-	background-color: #DB995A;
+    width: 350;
+    transform: rotate(90deg);
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50;
 }

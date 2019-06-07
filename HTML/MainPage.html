@@ -1,5 +1,6 @@
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Database</title>
 	<link rel="stylesheet" href="./../CSS/MainPage.css" />
 </head>
@@ -9,12 +10,13 @@
 	
 	<script>
 		var userName = localStorage.getItem("userName")
-		document.getElementById("welcome").innerHTML = "<u>Welcome " + userName + "</u>";
+		document.getElementById("welcome").innerHTML = "<u>Welcome <mark>" + userName + "</mark></u>";
 	</script>
 	
 	<br>
 		<div id="titleHead" onclick="getMessage()"><b>Farm Database</b></div>
 	<br>
+
 	<script>	
 		function getMessage()
 		{
@@ -32,11 +34,11 @@
 		<td><a target="main" href="./NavAreas/Hay.html"><div class="nav">Hay</div></a></td>
 		<td><a target="main" href="./NavAreas/Cattle.html"><div class="nav">Cattle</div></a></td>
 		<td><a target="main" href="./NavAreas/Equipment.html"><div class="nav">Equipment</div></a></td>
-		<td><a target="main" href="./NavAreas/About.html"><div class="nav">About</div></a></td>
+		<!--<td><a target="main" href="./NavAreas/About.html"><div class="nav">About</div></a></td>-->
 	</tr>
 	</table>
 	
-	<iframe name="main" src="./NavAreas/Finances.html" />
+	<iframe name="main" src="./NavAreas/Summary.html" />
 	
 	<script>
 		function change()
