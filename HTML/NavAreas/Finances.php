@@ -22,7 +22,6 @@
 		if ($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
-		echo "Connected successfully";
 
 		$sql = "SELECT * FROM farm_database.cattle
 				WHERE name = 'Sue';";
@@ -38,25 +37,17 @@
 			<td><b>Repairs</b></td>
 			<td><b>Cattle</b></td>
 		</tr>
-		<?php 
-			$sql = "SELECT COUNT(*) FROM farm_database.cattle";
+		<?php 		
+			$sql = "SELECT * FROM farm_database.finances";
 			$result = $conn->query($sql);
+
 			while($row = $result->fetch_assoc()) {
-				$amountRows = $row["COUNT(*)"];
-			}
-			
-			for ($i = 0; $i < $amountRows; $i++) {
-				echo "the number is : $i <br>";
+				echo "<tr><td><b>" . $row["quarter"] . " " . $row["year"] . "</b></td>" . 
+				"<td>$" . $row["financeHay"] . "</td>" . 
+				"<td>$" . $row["financeRepairs"] . "</td>" . 
+				"<td>$" . $row["financeCattle"] . "</td>" . "</tr>";
 			}
 		?>
-		<tr>
-			<td><b>Quarter 1:</b></td>
-			<td><?php  while($row = $result->fetch_assoc()) {
-    							echo "ID: " . $row["idcattle"] . "Name: " . $row["name"];
-							} ?></td>
-			<td>-1000</td>
-			<td>-$100</td>
-		</tr>
 		
 	</table>
 
