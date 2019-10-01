@@ -30,7 +30,7 @@
 	<table>
 	<tr>
 		<td><a target="main" href="./NavAreas/Summary.html"><div class="nav">Summary</div></a></td>
-		<td><a target="main" href="./NavAreas/Finances.html"><div class="nav">Finances</div></a></td>
+		<td><a target="main" href="./HTML/NavAreas/Finances.php"><div class="nav">Finances</div></a></td>
 		<td><a target="main" href="./NavAreas/Hay.html"><div class="nav">Hay</div></a></td>
 		<td><a target="main" href="./NavAreas/Cattle.html"><div class="nav">Cattle</div></a></td>
 		<td><a target="main" href="./NavAreas/Equipment.html"><div class="nav">Equipment</div></a></td>
