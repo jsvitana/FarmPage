@@ -29,16 +29,16 @@
 	
 	<table>
 	<tr>
-		<td><a target="main" href="./NavAreas/Summary.html"><div class="nav">Summary</div></a></td>
+		<td><a target="main" href="./HTML/NavAreas/Summary.php"><div class="nav">Summary</div></a></td>
 		<td><a target="main" href="./HTML/NavAreas/Finances.php"><div class="nav">Finances</div></a></td>
-		<td><a target="main" href="./NavAreas/Hay.html"><div class="nav">Hay</div></a></td>
-		<td><a target="main" href="./NavAreas/Cattle.html"><div class="nav">Cattle</div></a></td>
-		<td><a target="main" href="./NavAreas/Equipment.html"><div class="nav">Equipment</div></a></td>
+		<td><a target="main" href="./HTML/NavAreas/Hay.php"><div class="nav">Hay</div></a></td>
+		<td><a target="main" href="./HTML/NavAreas/Cattle.php"><div class="nav">Cattle</div></a></td>
+		<td><a target="main" href="./HTML/NavAreas/Equipment.php"><div class="nav">Equipment</div></a></td>
 		<!--<td><a target="main" href="./NavAreas/About.html"><div class="nav">About</div></a></td>-->
 	</tr>
 	</table>
 	
-	<iframe name="main" src="./NavAreas/Summary.html" />
+	<iframe name="main" src="./HTML/NavAreas/Summary.php" />
 	
 	<script>
 		function change()

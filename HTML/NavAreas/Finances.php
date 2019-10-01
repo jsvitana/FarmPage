@@ -6,6 +6,10 @@
 		{
 			width: 25%;
 		}
+		.form-popup
+		{
+			display: none;
+		}
 	</style>
 </head>
 <body>
@@ -50,6 +54,24 @@
 		?>
 		
 	</table>
+
+	<button onclick="openForm()">Click here</button>
+
+	<div class="form-popup" id="myForm">
+		<form>
+			<h1>Enter New Finance</h1>
+		</form>
+	</div>
+
+	<script>
+		function openForm() {
+  			document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+  			document.getElementById("myForm").style.display = "none";
+		}
+	</script>
 
 </body>
 </html>
