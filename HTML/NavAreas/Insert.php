@@ -37,14 +37,14 @@
         <input type="radio" id="equipBut" onclick="openEquipment()" name="forms" />
     </form>
 
-    <form id="Finance" action="/PHP/Insert-Process.php">
-        <h1>Finance</h1>
-        <input type="text"/> <br>
+    <form id="Finance" method=POST action="/PHP/Insert-Process.php">
+        <label name="type">Finance</label> <br>
+        <input type="text" name="fname"/> <br>
         <input type="text"/> <br>
         <input type="text"/> <br>
         <input type="text"/> <br>
         <input type="text"/>
-        <input type="submit"/>
+        <input type="submit" value="Submit"/>
     </form>
 
     <form id="Hay" action="/PHP/Insert-Process.php">
@@ -53,6 +53,7 @@
         <input type="text"/> <br>
         <input type="text"/> <br>
         <input type="text"/>
+        <input type="submit"/>
     </form>
 
     <form id="Cattle" action="/PHP/Insert-Process.php">
@@ -61,6 +62,7 @@
         <input type="text"/> <br>
         <input type="text"/> <br>
         <input type="text"/>
+        <input type="submit"/>
     </form>
 
     <form id="Equipment" action="/PHP/Insert-Process.php">
@@ -69,6 +71,7 @@
         <input type="text"/> <br>
         <input type="text"/> <br>
         <input type="text"/>
+        <input type="submit"/>
     </form>
 
     <script>

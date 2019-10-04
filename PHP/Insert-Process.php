@@ -1,3 +1,4 @@
 <?php
-$name = $_REQUEST['forms'];
-echo ('<h1>' . $name  . '</h1>');
+$name = $_REQUEST['type'];
+echo $name;
+?>
