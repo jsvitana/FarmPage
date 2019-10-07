@@ -26,7 +26,7 @@
 	<table id="main">
 		<th colspan="4">Equipment</th>
 		<tr>
-			<td><b>Brand</b></td>
+			<td><b>Type</b></td>
 			<td><b>Make <br> Model</b></td>
 			<td><b>Year</b></td>
 		</tr>

@@ -3,6 +3,13 @@
 	<meta charset="UTF-8">
 	<title>Database</title>
 	<link rel="stylesheet" href="./../CSS/MainPage.css" />
+	<style>
+		#addData {
+			margin-left: auto;
+			margin-right: auto;
+			width: 120px;
+		}
+	</style>
 </head>
 <body style="overflow:hidden;">
 	
@@ -16,6 +23,8 @@
 	<br>
 		<div id="titleHead" onclick="getMessage()"><b>Farm Database</b></div>
 	<br>
+
+	<a target="main" href="./HTML/NavAreas/Insert.php"><div class="nav" id="addData">Add Data +</div></a>
 
 	<script>	
 		function getMessage()

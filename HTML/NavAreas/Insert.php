@@ -18,69 +18,87 @@
         {
            display: none; 
         }
+        #head {
+            height: 50;
+            font-size: 2em;
+            color: #654236;
+            text-align: center;
+            background-color: #DB995A;
+        }
+        #content {
+            text-align: center;
+            color: #654236;
+        }
     </style>
 </head>
 <body>
-    <h1>What would you like to update:</h1>
-    
-    <form>
-        <label for="finBut">Finance</label>
-        <input type="radio" id="finBut" onclick="openFinance()" name="forms" />
-        <br>
-        <label for="hayBut">Hay</label>
-        <input type="radio" id="hayBut" onclick="openHay()" name="forms" />
-        <br>
-        <label for="cattleBut">Cattle</label>
-        <input type="radio" id="cattleBut" onclick="openCattle()" name="forms" />
-        <br>
-        <label for="equipBut">Equipment</label>
-        <input type="radio" id="equipBut" onclick="openEquipment()" name="forms" />
-    </form>
+    <h1 id="head">What would you like to update:</h1>
 
-    <form id="Finance" method="POST" action="/PHP/Insert-Process.php">
-        <h1>Finance</h1>
-        <input type="text" placeholder="Hay Finances" name="finHay" required/> <br>
-        <input type="text" placeholder="Cattle Finances" name="finCow" required/> <br>
-        <input type="text" placeholder="Repair Finances" name="finRep" required/> <br>
-        <input type="text" placeholder="Spring,Fall,Summer,Winter" name="finQuarter" required/> <br>
-        <input type="text" placeholder="Year" name="finYear" required/>
+    <div id="content">
+        <form>
+            <label for="finBut">Finance</label>
+            <input type="radio" id="finBut" onclick="openFinance()" name="forms" />
+            <br>
+            <label for="hayBut">Hay</label>
+            <input type="radio" id="hayBut" onclick="openHay()" name="forms" />
+            <br>
+            <label for="cattleBut">Cattle</label>
+            <input type="radio" id="cattleBut" onclick="openCattle()" name="forms" />
+            <br>
+            <label for="equipBut">Equipment</label>
+            <input type="radio" id="equipBut" onclick="openEquipment()" name="forms" />
+        </form>
 
-        <input type="hidden" value="fin" name="type"/>
-        <input type="submit" value="Submit"/>
-    </form>
+        <form id="Finance" method="POST" action="/PHP/Insert-Process.php">
+            <h1>Finance</h1>
+            <input type="number" placeholder="Hay Finances" name="finHay" required/> <br>
+            <input type="number" placeholder="Cattle Finances" name="finCow" required/> <br>
+            <input type="number" placeholder="Repair Finances" name="finRep" required/> <br>
+            <input type="text" placeholder="Spring,Fall,Summer,Winter" name="finQuarter" required/> <br>
+            <input type="number" placeholder="Year" name="finYear" required/> <br>
 
-    <form id="Hay" method="POST" action="/PHP/Insert-Process.php">
-        <h1>Hay</h1>
-        <input type="text" placeholder="Round or Square" name="hayType"/> <br>
-        <input type="text" placeholder="Current Amount" name="hayCurr"/> <br>
-        <input type="text" placeholder="Sold Amount" name="haySol"/> <br>
-        <input type="text" placeholder="Fed Amount" name="hayFed"/>
+            <input type="hidden" value="fin" name="type"/>
+            <input type="submit" value="Submit"/>
+        </form>
 
-        <input type="hidden" value="hay" name="type"/>
-        <input type="submit" value="Submit"/>
-    </form>
+        <form id="Hay" method="POST" action="/PHP/Insert-Process.php">
+            <h1>Hay</h1>
+            <label for="round">Round Bales</label>
+            <input type="radio" name="hayType" id="round" value="Round" required/> <br>
 
-    <form id="Cattle" method="POST" action="/PHP/Insert-Process.php">
-        <h1>Cattle</h1>
-        <input type="text" placeholder="Tag Number" name="cowTag"/> <br>
-        <input type="text" placeholder="Name" name="cowName"/> <br>
-        <input type="text" placeholder="Breed" name="cowBreed"/> <br>
-        <input type="text" placeholder="Color" name="cowColor"/>
+            <label for="square">Square Bales</label>
+            <input type="radio" name="hayType" id="square" value="Square" required/> <br>
 
-        <input type="hidden" value="cow" name="type"/>
-        <input type="submit" value="Submit"/>
-    </form>
+            <input type="number" placeholder="Current Amount" name="hayCurr" required/> <br>
+            <input type="number" placeholder="Sold Amount" name="haySol" required/> <br>
+            <input type="number" placeholder="Fed Amount" name="hayFed" required/> <br>
 
-    <form id="Equipment" method="POST" action="/PHP/Insert-Process.php">
-        <h1>Equipment</h1>
-        <input type="text" placeholder="Type (ex. Tractor)" name="equipType"/> <br>
-        <input type="text" placeholder="Make" name="equipMake"/> <br>
-        <input type="text" placeholder="Model" name="equipModel"/> <br>
-        <input type="text" placeholder="Year" name="equipYear"/>
+            <input type="hidden" value="hay" name="type"/>
+            <input type="submit" value="Submit"/>
+        </form>
 
-        <input type="hidden" value="equip" name="type"/>
-        <input type="submit" value="Submit"/>
-    </form>
+        <form id="Cattle" method="POST" action="/PHP/Insert-Process.php">
+            <h1>Cattle</h1>
+            <input type="number" placeholder="Tag Number" name="cowTag" required/> <br>
+            <input type="text" placeholder="Name" name="cowName" required/> <br>
+            <input type="text" placeholder="Breed" name="cowBreed" required/> <br>
+            <input type="text" placeholder="Color" name="cowColor" required/> <br>
+
+            <input type="hidden" value="cow" name="type"/>
+            <input type="submit" value="Submit"/>
+        </form>
+
+        <form id="Equipment" method="POST" action="/PHP/Insert-Process.php">
+            <h1>Equipment</h1>
+            <input type="text" placeholder="Type (ex. Tractor)" name="equipType" required/> <br>
+            <input type="text" placeholder="Make" name="equipMake" required/> <br>
+            <input type="text" placeholder="Model" name="equipModel" required/> <br>
+            <input type="number" placeholder="Year" name="equipYear" required/> <br>
+
+            <input type="hidden" value="equip" name="type"/>
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
 
     <script>
         function openFinance() {

@@ -34,7 +34,9 @@ if($type == "hay") {
     $haySol = $_REQUEST["haySol"];
     $hayFed = $_REQUEST["hayFed"];
 
-    $sql = "INSERT INTO farm_database.hay";
+    $sql = "UPDATE farm_database.hay
+            SET currentAmount = '$hayCurr',soldAmount = '$haySol',fedAmount = '$hayFed'
+            WHERE type = '$hayType'";
     $result = $conn->query($sql);
 }
 
@@ -55,9 +57,13 @@ if($type == "equip") {
     $equipModel = $_REQUEST["equipModel"];
     $equipYear = $_REQUEST["equipYear"];
 
-    $sql = "INSERT INTO farm_database.equipment";
+    $sql = "INSERT INTO farm_database.equipment (type, make, model, year)
+            VALUES ('$equipType','$equipMake','$equipModel','$equipYear')";
     $result = $conn->query($sql);
 }
 
+// Redirect to summary page
+header("Location: ./../HTML/NavAreas/Summary.php");
 
 ?>
+
